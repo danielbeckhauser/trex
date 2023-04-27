@@ -23,13 +23,13 @@ ground.x = ground.width /2;
 ground.velocityX = -4;
   
 invisibleGround = createSprite(200,200,400,20)
-invisibleGround = false
+invisibleGround.visible = false
 }
 
 function draw() {
 background(220);
 
-if(trex.isTouching(ground)){  
+if (trex.isTouching(ground)){  
   if (keyDown("space")){
   trex.velocityY = -13;
   }
